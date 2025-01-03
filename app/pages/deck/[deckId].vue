@@ -2,9 +2,9 @@
         lang="ts">
 import { useDeck } from "~/queries/decks";
 
-const query = useDeck();
-
 const route = useRoute("deck-deckId");
+const query = useDeck(useRoute);
+
 </script>
 
 <template>
